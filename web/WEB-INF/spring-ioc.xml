@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="sequenceGenerator1" class="com.ioc.SequenceGenerator">
+        <property name="prefix" value="30" />
+        <property name="suffix" value="A" />
+        <property name="inital" value="100" />
+        <property name="arrs">
+            <array>
+                <value>AAA</value>
+                <value>BBB</value>
+                <value>CCC</value>
+                <value>DDD</value>
+            </array>
+        </property>
+        <property name="lists">
+            <list>
+                <value>111</value>
+                <value>222</value>
+                <value>333</value>
+                <value>444</value>
+            </list>
+        </property>
+        <property name="sets">
+            <set>
+                <value>1</value>
+                <value>2</value>
+                <value>3</value>
+                <value>4</value>
+            </set>
+        </property>
+        <property name="maps">
+            <map>
+                <entry key="胡鹏涛" value="33"/>
+                <entry key="lihao" value="35"/>
+
+            </map>
+        </property>
+        <property name="properties">
+            <props>
+                <prop key="A">A</prop>
+                <prop key="B">B</prop>
+                <prop key="C">C</prop>
+            </props>
+        </property>
+    </bean>
+
+    <!--<bean id="sequenceGenerator" class="com.ioc.SequenceGenerator">-->
+        <!--<constructor-arg name="inital" value="33"></constructor-arg>-->
+        <!--<constructor-arg name="prefix" value="A"></constructor-arg>-->
+        <!--<constructor-arg name="suffix" value="B"></constructor-arg>-->
+    <!--</bean>-->
+</beans>
